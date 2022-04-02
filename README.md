@@ -1,4 +1,7 @@
 # Alibaba Cloud OSS SDK for React Native
+- 官方sdk一直未更新，修复剪切图片后上传时报错 No such file or directory，发现原因是 getFilePathFromURI 方法中没有正确获取缓存中的图片地址
+- android SDK = 30
+
 
 ## [README of Chinese](https://github.com/aliyun/aliyun-oss-react-native/blob/master/README-CN.md)
 
@@ -400,7 +403,7 @@ In the repository, we prodive RN SDK DEMO in the Example folder including andrio
 * step-1:clone the project and install some dependencies
 
 ```
-1. git clone https://github.com/aliyun/aliyun-oss-react-native.git
+1. git clone https://github.com/CT-LX/aliyun-oss-react-native.git
 2. cd Example
 3. npm install
 ```
