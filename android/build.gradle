@@ -12,14 +12,18 @@ buildscript {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion '27.0.3'
+    // compileSdkVersion 23
+    compileSdkVersion 30
+    // buildToolsVersion '27.0.3'
+    buildToolsVersion '30.0.2'
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 22
-        versionCode 1
-        versionName "1.0"
+        // minSdkVersion 16
+        minSdkVersion 21
+        // targetSdkVersion 22
+        targetSdkVersion 30
+        versionCode 2
+        versionName "2.0"
     }
     lintOptions {
         abortOnError false
@@ -31,7 +35,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.facebook.react:react-native:+'
-    compile 'com.aliyun.dpa:oss-android-sdk:+'
+    implementation 'com.facebook.react:react-native:+'
+    implementation 'com.aliyun.dpa:oss-android-sdk:+'
 }
   
